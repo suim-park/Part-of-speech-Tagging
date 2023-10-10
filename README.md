@@ -52,21 +52,21 @@ for i, from_tag in enumerate(universal_tags):
 
 ## Explain the results
 Hidden Markov Model (HMM) based Part-of-Speech (POS) tagging can be summarized as follows:
-```Python
+```
 In the first sentence, ('coming', 'VERB') / Test result 'NOUN':
 Transition probability:
 DET -> VERB: 0.0615
 DET -> NOUN: 0.6156 (error)
 ```
 - The actual model expected 'coming(VERB)' to follow 'The(DET)' in the sentence. However, the test result indicated 'NOUN.' This discrepancy arises because the transition probability from DET to VERB is 0.0615, while the transition probability from DET to NOUN is 0.6156, which is significantly higher. With such a substantial difference in transition probabilities and relatively small observation probabilities, errors like this can occur.
-```Python
+```
 In the second sentence, ('face-to-face', 'ADJ') / Test result 'NOUN':
 Transition probability:
 ADJ -> ADJ: 0.0592
 ADJ -> NOUN: 0.6749 (error)
 ```
 - The actual model expected 'face-to-face(ADJ)' to follow 'introductory(ADJ)' in the sentence. However, the test result indicated 'NOUN.' This error also occurs due to the significant difference between the transition probability from ADJ to ADJ and the transition probability from ADJ to NOUN. Considering the grammatical structure where adjectives are followed by nouns in sentences, the difference in probabilities can be better understood as the reason for this error.
-```Python
+```
 In the second sentence, ('another', 'DET') / Test result 'NOUN':
 Transition probability:
 NUM -> DET: 0.0104
