@@ -70,7 +70,7 @@ ADJ -> NOUN: 0.6749 (error)
 In the second sentence, ('another', 'DET') / Test result 'NOUN':
 Transition probability:
 NUM -> DET: 0.0104
-NUM -> NOUN: 0.3827
+NUM -> NOUN: 0.3827 (error)
 ```
 - The actual model expected 'another(DET)' in the sentence, but the test result indicated 'NOUN.' This error is also caused by the remarkably high probability of a noun following a number. Considering the grammar where numbers precede nouns, we can understand why such a difference in transition probabilities led to this error.</br>
 ## Summary
