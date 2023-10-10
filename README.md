@@ -43,7 +43,7 @@ Overall accuracy(%): 93.617 %
 ```
 
 ```Python
-# Print transition probabilities for error checking (at the end of the code)
+# Print transition probabilities for error checking (if you want to see, add this code at the end of the code)
 for i, from_tag in enumerate(universal_tags):
     print(f"Transition Probabilities from '{from_tag}':")
     for j, to_tag in enumerate(universal_tags):
