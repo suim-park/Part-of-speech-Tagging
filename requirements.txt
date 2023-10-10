@@ -1,0 +1,12 @@
+#devops
+black==22.3.0
+pytest==7.1.3
+pytest-cov==4.0.0
+pandas==2.1.0
+pylint==2.15.3
+
+#rust based linter
+ruff==0.0.284
+
+#nlp
+nltk==3.8.1
