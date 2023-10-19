@@ -1,4 +1,4 @@
-# HW 3. POS Tagging
+# HW 3. POS Tagging :pencil:
 * __`Class`__: Introduction to Natural Language Processing
 * __`Professor`__: Patrick Wang
 * __`Name`__: Suim Park (sp699)
